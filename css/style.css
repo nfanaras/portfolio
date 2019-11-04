@@ -1,0 +1,213 @@
+
+body {
+  background: #f2e8c4;
+  font-family: 'IBM Plex Sans','DM Serif Text', Georgia;
+}
+
+.skip a {
+
+  position: absolute;
+  top: -60px;
+  font-size: 50px;
+  background: white;
+}
+
+.skip a:focus{
+  position: absolute;
+  top: 0px;
+}
+
+.home-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 400px 500px 1000px;
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+  justify-content: center;
+
+}
+
+.aboutme-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 300px 400px 700px 700px 700px;
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+  justify-content: center;
+
+}
+h1 {
+  color: #b56d36;
+  font-size: 100px;
+  text-align: center;
+  grid-column: 1 / span 2;
+  grid-row: 1 / 2;
+  position: relative;
+  top: 200px;
+}
+.nav {
+  grid-column: 1 / span 2;
+  grid-row: 2 / 3;
+  text-align: center;
+}
+
+nav li {
+  display: block;
+  font-size: 50px;
+  color: #654C79;
+
+}
+.home-image {
+
+ grid-column: 1 / 2;
+ grid-row: 3 / 4;
+}
+
+
+h2 #hello{
+
+  position: relative;
+  top: 90px;
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  font-size: 60px;
+}
+
+#introp{
+  position: relative;
+  top: 160px;
+  font-size: 40px;
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+img {
+  width: 500px;
+}
+
+.northquad-image{
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+
+.northquad-image img {
+  width: 400px;
+}
+
+#studieshead {
+  position: relative;
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+#studiesp {
+  position: relative;
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  top: 50px;
+  font-size: 13px;
+}
+
+.parthenon-image{
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+}
+
+.parthenon-image img {
+  width: 400px;
+}
+#greekhead{
+  position: relative;
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+}
+
+#greekp{
+  position: relative;
+  top: 50px;
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+  font-size: 13px;
+}
+
+.lorde-image {
+  grid-column: 1 / 2;
+  grid-row: 5 / 6;
+}
+
+.lorde-image img {
+  width: 400px;
+}
+#musichead {
+  position: relative;
+  grid-column: 2 / 3;
+  grid-row: 5 / 6;
+}
+
+#musicp {
+  position: relative;
+  top: 50px;
+  grid-column: 2 / 3;
+  grid-row: 5 / 6;
+  font-size: 13px;
+}
+
+@media screen and (min-width: 1000px){
+  .home-container{
+
+    display: grid;
+    grid-template-columns: 150px 650px auto 150px;
+    grid-template-rows: 100px 50px 500px;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+
+  }
+
+  h1 {
+    grid-column: 2 / span 2;
+  }
+
+  .nav {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+  }
+  div nav ul{
+
+    text-align: center;
+
+  }
+
+  nav li {
+    display: inline;
+    font-size: 20px;
+
+  }
+   .home-image {
+
+    grid-column: 2 / 3;
+  }
+
+  .home-image img {
+    width: 300px;
+    justify-self: center;
+
+  }
+
+  h2{
+
+    position: relative;
+    top: 90px;
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    font-family: 'IBM Plex Sans';
+    font-size: 60px;
+  }
+
+  p{
+    position: relative;
+    top: 160px;
+    font-family: 'IBM Plex Sans';
+    font-size: 40px;
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+  }
+}
