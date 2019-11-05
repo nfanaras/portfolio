@@ -2,8 +2,12 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name = 'viewport' content = 'width=device-width, initial-scale=1'>
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=DM Serif Text' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans' rel='stylesheet'>
     <title>Nadia Fanaras - UX Designer</title>
   </head>
   <body>
@@ -13,18 +17,19 @@
       <div class="nav">
         <nav>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutme.html">About Me</a></li>
-            <li><a href="experiences.html">Experiences</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html" id = "homelink">Home</a></li>
+            <li><a href="aboutme.html" id = "aboutlink">About Me</a></li>
+            <li><a href="experiences.html" id = "explink" class="active">Experiences</a></li>
+            <li><a href="projects.html" id = "projlink">Projects</a></li>
+            <li><a href-"gallery.html">Gallery</a></li>
+            <li><a href="resume.pdf" target ="_blank" id = "resumelink">Resume</a></li>
+            <li><a href="contact.html" id = "contactlink">Contact</a></li>
           </ul>
         </nav>
       </div>
 
-      <h2>Hello.</h2>
-      <p>My name is Nadia Fanaras. I am a junior studying User Experience Design
+      <h2 class="hello" id ="main">Hello.</h2>
+      <p id="introp">My name is Nadia Fanaras. I am a junior studying User Experience Design
         at the University of Michigan - School of Information. Go blue!</p>
       <div class="home-image">
         <img src="images/home.jpg" alt="sunset"/>

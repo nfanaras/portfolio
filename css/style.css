@@ -1,14 +1,14 @@
 
 body {
-  background: #f2e8c4;
-  font-family: 'IBM Plex Sans','DM Serif Text', Georgia;
+  background: white;
+  font-family: 'Roboto Condensed', 'IBM Plex Sans','DM Serif Text', Georgia;
 }
 
 .skip a {
 
   position: absolute;
   top: -60px;
-  font-size: 50px;
+  font-size: 20px;
   background: white;
 }
 
@@ -20,9 +20,9 @@ body {
 .home-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 400px 500px 1000px;
+  grid-template-rows: 200px 400px 300px;
   grid-column-gap: 10px;
-  grid-row-gap: 15px;
+  grid-row-gap: 10px;
   justify-content: center;
 
 }
@@ -30,33 +30,88 @@ body {
 .aboutme-container{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 300px 400px 700px 700px 700px;
-  grid-column-gap: 10px;
+  grid-template-rows: 200px 350px 500px 420px 300px;
+  grid-row-gap: 15px;
+  justify-content: center;
+  position: relative;
+  left: 13px;
+
+
+}
+
+.experiences-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 200px 350px 160px 300px 150px 400px;
   grid-row-gap: 15px;
   justify-content: center;
 
 }
+
+
+.projects-container{
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 200px 350px 200px 200px 300px;
+  grid-row-gap: 15px;
+  justify-content: center;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 200px 350px 300px 300px 300px 300px 300px 300px 300px 300px 300px;
+  grid-row-gap: 10px;
+  justify-content: center;
+}
+
+.contact-container {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 200px 350px 50px 100px 100px 100px 100px;
+  grid-row-gap: 10px;
+  justify-content: center;
+}
+
 h1 {
-  color: #b56d36;
-  font-size: 100px;
+  color: #1c124d;
+  font-size: 72px;
   text-align: center;
   grid-column: 1 / span 2;
   grid-row: 1 / 2;
   position: relative;
-  top: 200px;
+  top: 45px;
+  left: 7px;
 }
 .nav {
   grid-column: 1 / span 2;
   grid-row: 2 / 3;
   text-align: center;
+  position: relative;
 }
 
 nav li {
+
   display: block;
-  font-size: 50px;
-  color: #654C79;
+  font-size: 25px;
+  padding-bottom: 20px;
 
 }
+
+nav a{
+  color: black;
+  text-decoration: none;
+
+}
+
+.active {
+
+  font-weight: 1000;
+
+}
+
 .home-image {
 
  grid-column: 1 / 2;
@@ -64,25 +119,24 @@ nav li {
 }
 
 
-h2 #hello{
+.hello{
 
   position: relative;
-  top: 90px;
   grid-column: 2 / 3;
   grid-row: 3 / 4;
-  font-size: 60px;
+  font-size: 50px;
 }
 
 #introp{
   position: relative;
-  top: 160px;
-  font-size: 40px;
+  top: 75px;
+  font-size: 20px;
   grid-column: 2 / 3;
   grid-row: 3 / 4;
 }
 
 img {
-  width: 500px;
+  width: 200px;
 }
 
 .northquad-image{
@@ -91,20 +145,24 @@ img {
 }
 
 .northquad-image img {
-  width: 400px;
+  width: 200px;
+  position: relative;
+  left: -10px;
 }
 
-#studieshead {
+.studieshead{
   position: relative;
   grid-column: 2 / 3;
   grid-row: 3 / 4;
+  font-size: 25px;
 }
+
 #studiesp {
   position: relative;
   grid-column: 2 / 3;
   grid-row: 3 / 4;
-  top: 50px;
-  font-size: 13px;
+  top: 30px;
+  font-size: 15px;
 }
 
 .parthenon-image{
@@ -113,20 +171,23 @@ img {
 }
 
 .parthenon-image img {
-  width: 400px;
+  width: 200px;
+  position: relative;
+  right: 0px;
 }
-#greekhead{
+.greekhead {
   position: relative;
   grid-column: 1 / 2;
   grid-row: 4 / 5;
+  font-size: 25px;
 }
 
 #greekp{
   position: relative;
-  top: 50px;
+  top: 55px;
   grid-column: 1 / 2;
   grid-row: 4 / 5;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .lorde-image {
@@ -135,22 +196,190 @@ img {
 }
 
 .lorde-image img {
-  width: 400px;
+  width: 200px;
+  position: relative;
+  left: -10px;
 }
-#musichead {
+.musichead {
   position: relative;
   grid-column: 2 / 3;
   grid-row: 5 / 6;
+  font-size: 25px;
 }
 
 #musicp {
   position: relative;
-  top: 50px;
+  top: 30px;
   grid-column: 2 / 3;
   grid-row: 5 / 6;
-  font-size: 13px;
+  font-size: 15px;
 }
 
+.southgatep {
+  grid-column: 1 / span 2;
+  grid-row: 3 / 4;
+  font-size: 15px;
+  text-align: center;
+}
+
+.market-image {
+  grid-column: 1 / span 2;
+  grid-row: 4 / 5;
+}
+
+.starbucksp {
+  grid-column: 1 / span 2;
+  grid-row: 5 / 6;
+  font-size: 15px;
+  text-align: center;
+}
+
+.sbux-image {
+  grid-column: 1 / span 2;
+  grid-row: 6 / 7;
+}
+
+.market-image img{
+  width: 300px;
+  position: relative;
+  left: 40px;
+}
+
+.sbux-image img {
+  width: 300px;
+  position: relative;
+  left: 40px;
+  top: -20px;
+}
+
+.UMD {
+  grid-column: 1 / span 2;
+  grid-row: 3 / 4;
+  text-align: center;
+  font-size: 20px;
+}
+
+.priorityh2 {
+  grid-column: 1 / span 2;
+  grid-row: 4 / 5;
+  text-align: center;
+  font-size: 23px;
+}
+
+.priorityp {
+  grid-column: 1 / span 2;
+  grid-row: 4 / 5;
+  text-align: center;
+  position: relative;
+  top: 30px;
+}
+
+.queue-image img {
+  visibility: hidden;
+}
+
+.cch2 {
+  grid-column: 1 / span 2;
+  grid-row: 5 / 6;
+  text-align: center;
+  font-size: 23px;
+}
+
+.ccp {
+  grid-column: 1 / span 2;
+  grid-row: 5 / 6;
+  text-align: center;
+  position: relative;
+  top: 30px;
+}
+
+.cc-image img {
+  visibility: hidden;
+}
+
+.bluewater-image {
+  grid-column: 1 / span 2;
+  grid-row: 3 / 4;
+}
+
+.chapel-image {
+  grid-column: 1 / span 2;
+  grid-row: 4 / 5;
+}
+
+.dinner-image {
+  grid-column: 1 / span 2;
+  grid-row: 5 / 6;
+}
+
+.palm-image {
+  grid-column: 1 / span 2;
+  grid-row: 6 / 7;
+}
+
+.jugs-image {
+  grid-column: 1 / span 2;
+  grid-row: 7 / 8;
+}
+
+.rocks-image {
+  grid-column: 1 / span 2;
+  grid-row: 8 / 9;
+}
+
+.santorinidinner-image {
+  grid-column: 1 / span 2;
+  grid-row: 9 / 10;
+}
+
+.stranded-image {
+  grid-column: 1 / span 2;
+  grid-row: 10 / 11;
+}
+
+.theatre-image {
+  grid-column: 1 / span 2;
+  grid-row: 11 / 12;
+}
+
+.gal {
+  width: 300px;
+  transform: rotate(90deg);
+  position: relative;
+  left: 40px;
+}
+
+.turn {
+  width: 200px;
+  transform: rotate(-180deg);
+  position: relative;
+}
+
+.contacth2 {
+
+  grid-column: 1 / span 2;
+  grid-row: 3 / 4;
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+}
+
+#contact {
+
+  position: relative;
+  left: 70px;
+}
+
+
+input{
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+textarea {
+  font-size: 21px;
+  margin-bottom: 20px;
+}
 @media screen and (min-width: 1000px){
   .home-container{
 
@@ -198,14 +427,14 @@ img {
     top: 90px;
     grid-column: 3 / 4;
     grid-row: 3 / 4;
-    font-family: 'IBM Plex Sans';
+    font-family: 'Roboto Condensed', 'IBM Plex Sans';
     font-size: 60px;
   }
 
   p{
     position: relative;
     top: 160px;
-    font-family: 'IBM Plex Sans';
+    font-family: 'Roboto Condensed', 'IBM Plex Sans';
     font-size: 40px;
     grid-column: 3 / 4;
     grid-row: 3 / 4;

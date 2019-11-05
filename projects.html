@@ -2,8 +2,10 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name = 'viewport' content = 'width=device-width, initial-scale=1'>
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+<link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=DM Serif Text' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans' rel='stylesheet'>
     <title>Nadia Fanaras - UX Designer</title>
@@ -11,42 +13,51 @@
 
   <body>
     <div class="skip"><a href="#main">Skip to Main Content</a></div>
-    <div class="home-container">
+    <div class="projects-container">
       <h1>Nadia Fanaras</h1>
       <div class="nav">
         <nav>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutme.html">About Me</a></li>
-            <li><a href="experiences.html">Experiences</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html" id = "homelink">Home</a></li>
+            <li><a href="aboutme.html" id = "aboutlink">About Me</a></li>
+            <li><a href="experiences.html" id = "explink">Experiences</a></li>
+            <li><a href="projects.html" id = "projlink" class="active">Projects</a></li>
+            <li><a href-"gallery.html">Gallery</a></li>
+            <li><a href="resume.pdf" target ="_blank" id = "resumelink">Resume</a></li>
+            <li><a href="contact.html" id = "contactlink">Contact</a></li>
           </ul>
         </nav>
       </div>
 
-<p>
+<p id="main" class ="UMD">
 At UMD, I completed multiple complex projects in my computer science courses. They
 included concepts such as user interface input and output, file data, loops, arrays, data classes,
 pointers, recursion, polymorphism, and abstraction.
 </p>
 
-<h2>Priority Queue</h2>
-<p>
+<h2 class ="priorityh2">Priority Queue</h2>
+<p class ="priorityp">
 In this project I implemented a simulation of a priority queue in Microsoft Visual Studio
 C++ based off of four randomly generated types of jobs, one with a high priority that skips
 to the front of the queue. It was an individual project and I had about a month to complete it,
 so I had to take on all the roles of the project on my own in a limited amount of time.
 </p>
 
-<h2>Class Creation</h2>
+<div class="queue-image">
+  <img src="images/priorityqueue.jpg" alt="priority queue project"/>
+</div>
 
-<p>
+<h2 class ="cch2">Class Creation</h2>
+
+<p class = "ccp">
 This project required the creation of a "string" class. I designed and implemented my own
 version of the "string" class using various methods to manipulate objects and output
 results based on user input.
 </p>
+
+<div class="cc-image">
+  <img src="images/string.jpg" alt="class creation project"/>
+</div>
 
 </div>
 </body>
