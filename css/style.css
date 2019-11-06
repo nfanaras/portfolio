@@ -95,6 +95,13 @@ h1 {
   position: relative;
   top: 45px;
   left: 7px;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  from{color: #1c124d;}
+  to{color: #7e74b5;}
 }
 .nav {
   grid-column: 1 / span 2;
