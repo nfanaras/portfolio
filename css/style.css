@@ -20,17 +20,26 @@ body {
 .home-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 200px 400px 300px;
+  grid-template-rows: 200px 400px 300px 100px;
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   justify-content: center;
 
 }
 
+footer {
+  grid-column: `1 / span 2;
+  grid-row-end: -1;`
+  text-align: center;
+  position: relative;
+  left: 20px;
+  bottom: 10px;
+  color: gray;
+}
 .aboutme-container{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 200px 350px 500px 420px 300px;
+  grid-template-rows: 200px 350px 500px 420px 300px 100px;
   grid-row-gap: 15px;
   justify-content: center;
   position: relative;
@@ -42,7 +51,7 @@ body {
 .experiences-container{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 200px 350px 160px 300px 150px 400px;
+  grid-template-rows: 200px 350px 160px 300px 150px 400px 100px;
   grid-row-gap: 15px;
   justify-content: center;
 
@@ -53,7 +62,7 @@ body {
 
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 200px 350px 200px 200px 300px;
+  grid-template-rows: 200px 350px 200px 200px 300px 100px;
   grid-row-gap: 15px;
   justify-content: center;
 }
@@ -61,16 +70,18 @@ body {
 .gallery-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 200px 350px 300px 300px 300px 300px 300px 300px 300px 300px 300px;
+  grid-template-rows: 200px 350px 400px 400px 400px 400px 400px 400px 400px 400px 400px 100px;
   grid-row-gap: 10px;
   justify-content: center;
+  position: relative;
+  left: 15px;
 }
 
 .contact-container {
 
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 200px 350px 50px 100px 100px 100px 100px;
+  grid-template-rows: 200px 350px 50px 100px 100px 100px 100px 100px;
   grid-row-gap: 10px;
   justify-content: center;
 }
@@ -307,7 +318,7 @@ img {
   grid-row: 4 / 5;
 }
 
-.dinner-image {
+.sunsetboat-image {
   grid-column: 1 / span 2;
   grid-row: 5 / 6;
 }
@@ -332,7 +343,7 @@ img {
   grid-row: 9 / 10;
 }
 
-.stranded-image {
+.monastery-image {
   grid-column: 1 / span 2;
   grid-row: 10 / 11;
 }
@@ -344,14 +355,12 @@ img {
 
 .gal {
   width: 300px;
-  transform: rotate(90deg);
   position: relative;
   left: 40px;
 }
 
 .turn {
   width: 200px;
-  transform: rotate(-180deg);
   position: relative;
 }
 
