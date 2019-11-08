@@ -30,12 +30,12 @@ body {
 footer {
   grid-column: `1 / span 2;
   grid-row-end: -1;`
-  text-align: center;
-  position: relative;
-  left: 20px;
   bottom: 10px;
-  color: gray;
+  color: #5D5D5D;
+  text-align: center;
 }
+
+
 .aboutme-container{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -43,7 +43,8 @@ footer {
   grid-row-gap: 15px;
   justify-content: center;
   position: relative;
-  left: 13px;
+  left: 10px;
+  grid-column-gap: 10px;
 
 
 }
@@ -62,25 +63,23 @@ footer {
 
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 200px 350px 200px 200px 300px 100px;
+  grid-template-rows: 200px 350px 200px 200px 100px 100px;
   grid-row-gap: 15px;
   justify-content: center;
 }
 
 .gallery-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 200px 350px 400px 400px 400px 400px 400px 400px 400px 400px 400px 100px;
   grid-row-gap: 10px;
-  justify-content: center;
-  position: relative;
-  left: 15px;
+  /* left: 15px; */
 }
 
 .contact-container {
 
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 200px 350px 50px 100px 100px 100px 100px 100px;
   grid-row-gap: 10px;
   justify-content: center;
@@ -88,26 +87,44 @@ footer {
 
 h1 {
   color: #1c124d;
-  font-size: 72px;
+  font-size: 73px;
   text-align: center;
   grid-column: 1 / span 2;
   grid-row: 1 / 2;
   position: relative;
   top: 45px;
-  left: 7px;
+  /* left: 7px; */
+  justify-self: center;
   animation-name: example;
   animation-duration: 4s;
+  animation-name: bounceIn;
+  animation-duration: 2s;
 }
 
 @keyframes example {
   from{color: #1c124d;}
   to{color: #7e74b5;}
 }
+
+@keyframes bounceIn {
+  0% {
+   transform: scale(0.1);
+   opacity: 0;
+ }
+ 60% {
+   transform: scale(1.2);
+   opacity: 1;
+ }
+ 100% {
+   transform: scale(1);
+}
+}
 .nav {
   grid-column: 1 / span 2;
   grid-row: 2 / 3;
   text-align: center;
   position: relative;
+  justify-self: center;
 }
 
 nav li {
@@ -134,6 +151,7 @@ nav a{
 
  grid-column: 1 / 2;
  grid-row: 3 / 4;
+ justify-self: end;
 }
 
 
@@ -143,16 +161,21 @@ nav a{
   grid-column: 2 / 3;
   grid-row: 3 / 4;
   font-size: 50px;
+  justify-self: start;
+  left: 1px;
 }
 
-#introp{
+.introp{
   position: relative;
-  top: 75px;
+  top: 60px;
   font-size: 20px;
   grid-column: 2 / 3;
   grid-row: 3 / 4;
 }
 
+#design {
+  color: #1c124d;
+}
 img {
   width: 200px;
 }
@@ -160,12 +183,14 @@ img {
 .northquad-image{
   grid-column: 1 / 2;
   grid-row: 3 / 4;
+  justify-self: end;
+
 }
 
 .northquad-image img {
   width: 200px;
   position: relative;
-  left: -10px;
+  /* left: -10px; */
 }
 
 .studieshead{
@@ -173,6 +198,7 @@ img {
   grid-column: 2 / 3;
   grid-row: 3 / 4;
   font-size: 25px;
+  left:1px;
 }
 
 #studiesp {
@@ -181,57 +207,72 @@ img {
   grid-row: 3 / 4;
   top: 30px;
   font-size: 15px;
+  justify-self: start;
 }
-
-.parthenon-image{
+.fleetwood-image {
   grid-column: 2 / 3;
   grid-row: 4 / 5;
+  justify-self: start;
 }
 
-.parthenon-image img {
+.fleetwood-image img {
   width: 200px;
   position: relative;
-  right: 0px;
-}
-.greekhead {
-  position: relative;
-  grid-column: 1 / 2;
-  grid-row: 4 / 5;
-  font-size: 25px;
-}
-
-#greekp{
-  position: relative;
-  top: 55px;
-  grid-column: 1 / 2;
-  grid-row: 4 / 5;
-  font-size: 15px;
-}
-
-.lorde-image {
-  grid-column: 1 / 2;
-  grid-row: 5 / 6;
-}
-
-.lorde-image img {
-  width: 200px;
-  position: relative;
-  left: -10px;
+  /* left: -10px; */
+  justify-self: start;
 }
 .musichead {
   position: relative;
-  grid-column: 2 / 3;
-  grid-row: 5 / 6;
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
   font-size: 25px;
+  justify-self: end;
+  left: 1px;
 }
 
 #musicp {
   position: relative;
   top: 30px;
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+  font-size: 15px;
+  justify-self: end;
+  left: 5px;
+  margin-left: 5px;
+
+}
+
+.parthenon-image{
+  grid-column: 1 / 2;
+  grid-row: 5 / 6;
+  justify-self: end;
+}
+
+.parthenon-image img {
+  width: 200px;
+  position: relative;
+  /* right: 0px; */
+  justify-self: end;
+}
+.greekhead {
+  position: relative;
+  grid-column: 2 / 3;
+  grid-row: 5 / 6;
+  font-size: 25px;
+  justify-self: start;
+  left: 1px;
+}
+
+#greekp{
+  position: relative;
+  top: 55px;
   grid-column: 2 / 3;
   grid-row: 5 / 6;
   font-size: 15px;
+  justify-self: start;
 }
+
+
 
 .southgatep {
   grid-column: 1 / span 2;
@@ -243,6 +284,8 @@ img {
 .market-image {
   grid-column: 1 / span 2;
   grid-row: 4 / 5;
+  justify-self: center;
+
 }
 
 .starbucksp {
@@ -255,18 +298,19 @@ img {
 .sbux-image {
   grid-column: 1 / span 2;
   grid-row: 6 / 7;
+  justify-self: center;
 }
 
 .market-image img{
   width: 300px;
   position: relative;
-  left: 40px;
+  /* left: 40px; */
 }
 
 .sbux-image img {
   width: 300px;
   position: relative;
-  left: 40px;
+  /* left: 40px; */
   top: -20px;
 }
 
@@ -278,9 +322,11 @@ img {
 }
 
 .priorityh2 {
-  grid-column: 1 / span 2;
+  position: relative;
+  grid-column: 1 / -1;
   grid-row: 4 / 5;
   text-align: center;
+  justify-self: center;
   font-size: 23px;
 }
 
@@ -296,6 +342,10 @@ img {
   visibility: hidden;
 }
 
+.queue-image {
+  grid-column: 1 / span 2;
+  justify-self: center;
+}
 .cch2 {
   grid-column: 1 / span 2;
   grid-row: 5 / 6;
@@ -312,103 +362,471 @@ img {
 }
 
 .cc-image img {
+
   visibility: hidden;
 }
 
+.cc-image {
+  grid-column: 1 / span 2;
+  justify-self: center;
+}
 .bluewater-image {
   grid-column: 1 / span 2;
   grid-row: 3 / 4;
+  justify-self: center;
 }
 
 .chapel-image {
   grid-column: 1 / span 2;
   grid-row: 4 / 5;
+  justify-self: center;
+
 }
 
 .sunsetboat-image {
   grid-column: 1 / span 2;
   grid-row: 5 / 6;
+  justify-self: center;
+
 }
 
 .palm-image {
   grid-column: 1 / span 2;
   grid-row: 6 / 7;
+  justify-self: center;
+
 }
 
 .jugs-image {
   grid-column: 1 / span 2;
   grid-row: 7 / 8;
+  justify-self: center;
+
 }
 
 .rocks-image {
   grid-column: 1 / span 2;
   grid-row: 8 / 9;
+  justify-self: center;
+
 }
 
 .santorinidinner-image {
   grid-column: 1 / span 2;
   grid-row: 9 / 10;
+  justify-self: center;
+
 }
 
 .monastery-image {
   grid-column: 1 / span 2;
   grid-row: 10 / 11;
+  justify-self: center;
+
 }
 
 .theatre-image {
   grid-column: 1 / span 2;
   grid-row: 11 / 12;
+  justify-self: center;
+
 }
 
 .gal {
   width: 300px;
-  position: relative;
-  left: 40px;
+  /* left: 40px; */
+  justify-self: center;
 }
 
-.turn {
-  width: 200px;
-  position: relative;
+.imgs {
+  justify-self: center;
 }
 
-.contacth2 {
+
+
+ .contacth2 {
 
   grid-column: 1 / span 2;
   grid-row: 3 / 4;
   font-size: 20px;
   text-align: center;
-  position: relative;
 }
 
 #contact {
+  justify-self: center;
+  align-content: center;
+}
 
+.nameform {
   position: relative;
-  left: 70px;
+  grid-row: 4 / 5;
+  margin-bottom: 15px;
+  top: 10px;
 }
 
-
-input{
+.emailform {
+  position: relative;
+  grid-row: 5 / 6;
   margin-bottom: 20px;
-  font-size: 20px;
+  left: 2px;
+
 }
 
-textarea {
-  font-size: 21px;
-  margin-bottom: 20px;
+.messageform {
+
+  grid-row: 6 / 7;
+  margin-bottom: 15px;
+  position: relative;
+  left: -20px;
+  top: 10px;
+
 }
-@media screen and (min-width: 1000px){
+
+.submit {
+  grid-row: 7 / 8;
+  position: relative;
+  left: 90px;
+}
+
+label {
+  position: relative;
+  left: -7px;
+}
+
+
+@media screen and (min-width: 1024px){
   .home-container{
 
     display: grid;
-    grid-template-columns: 150px 650px auto 150px;
-    grid-template-rows: 100px 50px 500px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 100px 500px 100px;
     grid-column-gap: 10px;
     grid-row-gap: 15px;
 
   }
 
   h1 {
-    grid-column: 2 / span 2;
+    grid-column: 1 / span 2;
+  }
+
+  .nav {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+  }
+  div nav ul{
+
+    text-align: center;
+
+  }
+
+  nav li {
+    display: inline;
+    font-size: 20px;
+    padding-right: 10px;
+
+  }
+   .home-image {
+
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    justify-self: center;
+    position: relative;
+    left: 40px;
+  }
+
+  .home-image img {
+    width: 400px;
+
+  }
+
+  h2{
+
+    position: relative;
+    top: 70px;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    font-family: 'Roboto Condensed', 'IBM Plex Sans';
+    font-size: 60px;
+    left: -120px;
+  }
+
+  .introp{
+    position: relative;
+    top: 122px;
+    font-family: 'Roboto Condensed', 'IBM Plex Sans';
+    font-size: 35px;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    bottom: 10px;
+    justify-self: start;
+  }
+
+  .aboutme-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 100px 400px 300px 400px 100px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+
+  .northquad-image img {
+    width: 300px;
+
+  }
+
+  .studieshead{
+
+    font-size: 30px;
+  }
+
+  #studiesp {
+    top: 110px;
+    font-size: 22px;
+  }
+  .fleetwood-image img {
+    width: 300px;
+
+  }
+  .musichead {
+
+    font-size: 30px;
+  }
+
+  #musicp {
+    top: 110px;
+    font-size: 22px;
+    justify-self: end;
+  }
+
+  .parthenon-image img {
+    width: 300px;
+
+  }
+  .greekhead {
+
+    font-size: 30px;
+  }
+
+  #greekp{
+    top: 110px;
+    font-size: 22px;
+  }
+  .experiences-container{
+    grid-template-rows: 150px 100px 160px 400px 150px 450px 100px;
+  }
+
+  .southgatep {
+    font-size: 22px;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+  .starbucksp {
+    font-size: 22px;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+  .market-image img{
+    width: 400px;
+
+  }
+
+  .sbux-image img {
+    width: 400px;
+    top: -20px;
+  }
+
+  .projects-container{
+
+    grid-template-rows: 150px 100px 200px 150px 300px 220px 300px 100px;
+
+  }
+
+  .UMD {
+    font-size: 30px;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+  .priorityh2 {
+    grid-row: 4 / 5;
+    font-size: 27px;
+    grid-column: 1 / -1;
+    text-align: center;
+    left: 2px;
+    top: -20px;
+  }
+
+  .priorityp {
+    grid-column: 1 / span 2;
+    top: 30px;
+    font-size: 23px;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+  .queue-image img {
+    width: 500px;
+    visibility: visible;
+    grid-row: 5 / 6;
+  }
+
+  .cch2 {
+    grid-row: 6 / 7;
+    font-size: 27px;
+    left: 2px;
+  }
+
+  .ccp {
+    grid-row: 6 / 7;
+    top: 120px;
+    font-size: 23px;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+  .cc-image img {
+    width: 500px;
+    visibility: visible;
+  }
+
+  .cc-image {
+    grid-row: 7 / 8;
+    justify-self: center;
+
+  }
+
+  .gallery-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 100px 400px 400px 400px 100px;
+    grid-row-gap: 15px;
+  }
+
+
+
+  .bluewater-image {
+    justify-self: center;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+
+  .chapel-image {
+  justify-self: center;
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .sunsetboat-image {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    justify-self: center;
+
+  }
+
+  .palm-image {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    justify-self: center;
+
+  }
+
+  .jugs-image {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    justify-self: center;
+
+  }
+
+  .rocks-image {
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+    justify-self: center;
+
+  }
+
+  .santorinidinner-image {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+    justify-self: center;
+
+  }
+
+  .monastery-image {
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+    justify-self: center;
+
+  }
+
+  .theatre-image {
+    grid-column: 3 / 4;
+    grid-row: 5 / 6;
+    justify-self: center;
+
+  }
+
+  .contact-container {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 100px 50px 100px 100px 100px 100px 100px;
+    grid-row-gap: 10px;
+    justify-content: center;
+  }
+
+  .contacth2 {
+
+   grid-column: 1 / span 2;
+   grid-row: 3 / 4;
+   font-size: 20px;
+   text-align: center;
+   position: relative;
+   top:-15px;
+   left: 1px;
+  }
+
+#contact {
+  grid-column: 1 / -1;
+  grid-row: 4 / 5;
+  font-size: 20px;
+}
+
+#email, #name, textarea {
+  font-size: 30px;
+}
+#sub {
+  font-size: 15px;
+  position: relative;
+  left: 100px;
+  top: 10px;
+}
+  footer {
+    grid-column: 1 / span 2;
+    grid-row-end: -1;
+    text-align: center;
+  }
+  #galhead {
+    grid-column: 1 / span 3;
+  }
+
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .home-container{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 100px 500px 100px;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+
+  }
+
+  h1 {
+    grid-column: 1 / span 2;
   }
 
   .nav {
@@ -424,35 +842,293 @@ textarea {
   nav li {
     display: inline;
     font-size: 20px;
+    padding-right: 10px;
 
   }
    .home-image {
 
-    grid-column: 2 / 3;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    justify-self: center;
+    position: relative;
+    left: 40px;
   }
 
   .home-image img {
-    width: 300px;
-    justify-self: center;
+    width: 250px;
 
   }
 
   h2{
 
     position: relative;
-    top: 90px;
-    grid-column: 3 / 4;
+    top: 70px;
+    grid-column: 2 / 3;
     grid-row: 3 / 4;
     font-family: 'Roboto Condensed', 'IBM Plex Sans';
-    font-size: 60px;
+    font-size: 25px;
+    left: -30px;
   }
 
-  p{
+  .introp{
     position: relative;
-    top: 160px;
+    top: 150px;
     font-family: 'Roboto Condensed', 'IBM Plex Sans';
-    font-size: 40px;
-    grid-column: 3 / 4;
+    font-size: 30px;
+    grid-column: 2 / 3;
     grid-row: 3 / 4;
+    justify-self: start;
+  }
+
+  .aboutme-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 100px 400px 300px 400px 100px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+
+  .northquad-image img {
+    width: 250px;
+
+  }
+
+  .studieshead{
+
+    font-size: 25px;
+    top: 40px;
+    left: 1px;
+  }
+
+  #studiesp {
+    top: 80px;
+    font-size: 18px;
+  }
+  .fleetwood-image img {
+    width: 250px;
+
+  }
+  .musichead {
+
+    font-size: 25px;
+    left: 3px;
+  }
+
+  #musicp {
+    top: 110px;
+    font-size: 18px;
+    justify-self: end;
+  }
+
+  .parthenon-image img {
+    width: 250px;
+
+  }
+  .greekhead {
+
+    font-size: 25px;
+    left: 1px;
+  }
+
+  #greekp{
+    top: 110px;
+    font-size: 18px;
+  }
+  .experiences-container{
+    grid-template-rows: 150px 100px 300px 400px 250px 450px 100px;
+  }
+
+  .southgatep {
+    font-size: 25px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .starbucksp {
+    font-size: 25px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .market-image img{
+    width: 425px;
+
+  }
+
+  .sbux-image img {
+    width: 425px;
+    top: -20px;
+  }
+
+  .projects-container{
+
+    grid-template-rows: 150px 70px 200px 150px 300px 220px 300px 100px;
+
+  }
+
+  .UMD {
+    font-size: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .priorityh2 {
+    grid-row: 4 / 5;
+    font-size: 27px;
+    margin-left: 200px;
+    margin-right: 200px;
+    left: 2px;
+    top: -20px;
+  }
+
+  .priorityp {
+    grid-column: 1 / span 2;
+    top: 30px;
+    font-size: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .queue-image img {
+    width: 500px;
+    visibility: visible;
+    grid-row: 5 / 6;
+  }
+
+  .cch2 {
+    grid-row: 6 / 7;
+    font-size: 27px;
+    margin-left: 200px;
+    margin-right: 200px;
+    left: 2px;
+  }
+
+  .ccp {
+    grid-row: 6 / 7;
+    top: 120px;
+    font-size: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .cc-image img {
+    width: 500px;
+    visibility: visible;
+  }
+
+  .cc-image {
+    grid-row: 7 / 8;
+    justify-self: center;
+
+  }
+  .gallery-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 100px 600px 600px 600px 600px 600px 600px 600px 600px 600px 100px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+
+  .gal {
+    width: 400px;
+  }
+
+  .bluewater-image {
+    justify-self: center;
+
+    grid-column: 1 / span 2;
+    grid-row: 3 / 4;
+  }
+
+  .chapel-image {
+    justify-self: center;
+
+    grid-column: 1 / span 2;
+    grid-row: 4 / 5;
+  }
+
+  .sunsetboat-image {
+    justify-self: center;
+
+    grid-column: 1 / span 2;
+    grid-row: 5 / 6;
+  }
+
+  .palm-image {
+    justify-self: center;
+
+    grid-column: 1 / span 2;
+    grid-row: 6 / 7;
+  }
+
+  .jugs-image {
+    justify-self: center;
+
+    grid-column: 1 / span 2;
+    grid-row: 7 / 8;
+  }
+
+  .rocks-image {
+    justify-self: center;
+
+    grid-column: 1 / span 2;
+    grid-row: 8 / 9;
+  }
+
+  .santorinidinner-image {
+    justify-self: center;
+
+    grid-column: 1 / span 2;
+    grid-row: 9 / 10;
+  }
+
+  .monastery-image {
+    justify-self: center;
+
+    grid-column: 1 / span 2;
+    grid-row: 10 / 11;
+  }
+
+  .theatre-image {
+    justify-self: center;
+
+    grid-column: 1 / span 2;
+    grid-row: 11 / 12;
+  }
+
+  .contact-container {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 100px 50px 100px 100px 100px 100px 100px;
+    grid-row-gap: 10px;
+    justify-content: center;
+  }
+
+  /* .contacth2 {
+
+    grid-column: 1 / span 2;
+    grid-row: 3 / 4;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    top: -20px;
+  }
+
+  #contact {
+  justify-self: center;
+  } */
+
+
+  input{
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+
+}
+
+@media (prefers-reduced-motion: reduce){
+  h1 {
+    animation-name: none;
+    animation-duration: none;
   }
 }
