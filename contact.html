@@ -31,27 +31,26 @@
 
 <h2 id ="main" class="contacth2">Contact Me - Nadia Fanaras</h2>
 
-<form id="contact">
+<form action ="https://formspree.io/xgeeejzo" method = "POST" id="contact">
 
-<div class = "nameform">
-<label for="name">Name:</label>
-<input type = "text" id="name" name="name">
+  <div class = "nameform">
+    <label for="name">Name:</label>
+    <input type = "text" id="name" name="name">
+  </div>
 
-</div>
+  <div class ="emailform">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+  </div>
 
-<div class ="emailform">
-<label for="email">Email:</label>
-<input type="email" id="email" name="email">
-</div>
+  <div class = "messageform">
+    <label for="message">Message: </label>
+    <textarea name="message" form="contact"></textarea>
+  </div>
 
-<div class = "messageform">
-<label for=message>Message:</label>
-<textarea name="message" form="contact"></textarea>
-</div>
-
-<div class="submit">
-<input type="submit" value="Submit">
-</div>
+  <div class="submit">
+    <input type="submit" value="Submit" id = "sub" >
+  </div>
 </form>
 
 </div>
