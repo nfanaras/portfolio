@@ -529,9 +529,8 @@ label {
 
     grid-column: 1 / 2;
     grid-row: 3 / 4;
-    justify-self: center;
+    justify-self: end;
     position: relative;
-    left: 40px;
   }
 
   .home-image img {
