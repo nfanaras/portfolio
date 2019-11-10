@@ -237,6 +237,7 @@ img {
   grid-row: 4 / 5;
   font-size: 15px;
   justify-self: end;
+  text-align: right;
   left: 5px;
   margin-left: 5px;
 
